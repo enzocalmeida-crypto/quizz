@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz">
+
+        <h1>Quiz de Programação</h1>
+
+        <div id="pergunta-container">
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas"></div>
+
+            <p id="resultado"></p>
+
+            <button id="proximo" onclick="proximaPergunta()">
+                Próxima pergunta
+            </button>
+
+        </div>
+
+        <div id="final" style="display: none;">
+
+            <h2>Quiz finalizado!</h2>
+
+            <p id="pontuacaoFinal"></p>
+
+            <button onclick="reiniciarQuiz()">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
